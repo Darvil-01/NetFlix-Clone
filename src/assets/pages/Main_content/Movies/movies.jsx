@@ -80,7 +80,7 @@ export default function Movies(){
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer <API Read Access token>'
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWNiNDVlM2EzMTgzODBlYzljZThlYTIzZDgyYTczNyIsIm5iZiI6MTczNzQ0Njg4OS40OTQwMDAyLCJzdWIiOiI2NzhmNTVlOTAxYTcxYWNhNTRmMDdkMWQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.CQdh9Se_G4De_uF2LYGTeLHv6ICcRcK61zHjC4uLRRk'
         }
       };
       
