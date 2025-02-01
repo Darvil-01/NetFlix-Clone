@@ -1,0 +1,150 @@
+
+/* .homeNavBar{
+        
+        
+} */
+
+.NavBarNotScrolled{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background:transparent;
+}
+.NavBarScrolled{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: #000;
+}
+.logoAndLiContainer{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.homeLogoImg{
+    height: 25px;
+    width: 20%;
+    margin-left: 3%;
+}
+
+.menuContainer{
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    gap:30px;
+    /* justify-content: space-around; */
+    color: rgba(255,255,255,0.5);
+}
+.navlink{
+   
+    list-style-type: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navlink.active{
+    color: red;
+}
+
+
+.searchAndIconsContainer{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    gap:20px;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search{
+    all:unset;
+    width:100%;
+    display: none;
+    height: 20%;
+    /* background-color: #000; */
+    align-self: center;
+    border: none;
+    margin-left: 20px;
+    padding-bottom: 7px;
+    padding-top: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    transition: all 100s ease-in-out ;
+    
+    
+}
+
+.homeIcon{
+    /* align-self:self-end; */
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.searchButton{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.searchContainer{
+    height: 35px;
+    width: auto;
+    border-radius: 30px;
+    /* margin-right: 20px; */
+    margin-top: 6px;
+   
+    background-color: rgba(0, 0, 0, 0.7);
+    /* padding:5px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    transition: all 100s ease-in-out ;
+}
+
+.searchContainer:hover{
+    width: 60%;
+    
+}
+.searchContainer:hover .search {
+  display: inline-block;
+}
+
+.logOut{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: -5px;
+    top:100%;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 12px;
+    
+}
+
+.logOut>button{
+   
+    font-size: 0.8rem;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-weight:600;
+    border-radius: 3px;
+    cursor: pointer;
+}
