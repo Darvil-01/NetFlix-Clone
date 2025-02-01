@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "src/assets/pages/auth-page/signup/Signup.css",
+  apiKey: "AIzaSyDl-8MUmdNBVlyRrBULtqH9JT3hnwjrtfo",
   authDomain: "netflix-clone-14cb0.firebaseapp.com",
   projectId: "netflix-clone-14cb0",
   storageBucket: "netflix-clone-14cb0.firebasestorage.app",
