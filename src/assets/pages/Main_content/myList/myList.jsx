@@ -55,7 +55,7 @@ export default function myList(){
                     })
                 ):(
 
-                    <div>
+                    <div className="loderContainer">
                         <Loder/>
                         <h2 style={{color:"#fff", marginTop:"50px"}}>No Movie Found</h2>
                     </div>
