@@ -1,4 +1,5 @@
 import "./Auth_NavBar.css"
+import "../../MediaQuery/MQAuth_navBar.css"
 import logo from "../../../../logo.png"
 import { NavLink } from "react-router-dom";
 export default function Auth_NavBar({show}){

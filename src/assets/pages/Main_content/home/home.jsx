@@ -29,7 +29,7 @@ export default function Home(){
            
             <div className="disp-container">
                 {/* <h1>House of Ninjas</h1> */}
-                <img style={{width:"300px", height:"120px"}} src="https://image.tmdb.org/t/p/original/sFzVGobXVnazwttzOo34nx0c4vF.png"/>
+                <img style={{width:"90%", height:"40%"}} src="https://image.tmdb.org/t/p/original/sFzVGobXVnazwttzOo34nx0c4vF.png"/>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quibusdam quaerat culpa assumenda harum obcaecati,

@@ -2,6 +2,7 @@ import Auth_NavBar from '../Auth_NavBar/Auth_NavBar';
 import { FaChevronRight } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import "./Login.css";
+import "../../../pages/MediaQuery/MQLogin.css";
 import { useState } from 'react';
 import { createUserWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import  {firebaseAuth}  from '../../../../firebase-config';
@@ -28,7 +29,7 @@ export default function Login(){
                 {
                     pending:"Creating your account...",
                     success:"Account created successfully",
-                    error:"Email already in use.."
+                    error:"Account already exists.."
                 }
             )                
             
@@ -74,7 +75,7 @@ export default function Login(){
                 <p>Starts at ₹149. Cancel at any time.</p>
                 <h3>Ready to watch? Enter your email to create or restart your <br></br>membership.</h3>
 
-                <div style={{display:"flex", justifyContent:"space-evenly",alignItems:"center" ,height:"auto",marginTop:" 20px"}}>
+                <div className='loginInputContainer' >
 
                     <input className="loginInput" 
                         type='email' 

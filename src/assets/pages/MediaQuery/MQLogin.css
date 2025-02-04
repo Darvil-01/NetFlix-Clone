@@ -1,0 +1,58 @@
+ @media screen and (max-width:1024px) {
+    .loginContainer{
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    h1{
+        font-size: 30px;
+    }
+
+   
+    .loginInputContainer{
+        gap:5px;
+        margin-left: 15%;   
+        align-self: center;
+    }
+
+    .LoginSignUpButton{
+            margin-left: 30%;
+            margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:479px){
+    .loginContainer{
+        padding-top: 30%;
+    }
+
+    .loginInputContainer{
+        flex-direction: column;
+        gap:10px;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .LoginSignUpButton{
+        margin-left: 0%;
+        margin-top: 10px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .LoginSignUpButton p{
+        font-size: 15px;
+    }
+   
+}

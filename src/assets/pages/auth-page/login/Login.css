@@ -1,8 +1,10 @@
 .loginContainer{
-    position: absolute;
-    top:30%;
-    left: 20%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     text-align: center;
+    padding-top: 10%;
     line-height: 1px;
     /* box-sizing: border-box; */
 }
@@ -19,7 +21,7 @@ h3{
     line-height: 25px;
 }
 p{
-    color: #fff;
+    color: #fff; 
 }
 
 .loginInput{
@@ -33,6 +35,17 @@ p{
     text-align: left;
     padding: 6px 10px;
     border-radius: 2px;
+}
+
+.loginInputContainer{
+    display:inline-flex;
+    gap:10px;
+    
+    align-items:center;
+    height:auto;
+    margin-top:20px;
+    flex-wrap: wrap;
+
 }
 
 .LoginSignUpButton{
@@ -49,10 +62,19 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-self: center;
+    
 }
 
 .LoginSignUpButton p{
     display: inline;
     font-weight: bold;
-    border: none
+    border: none;
+    justify-self: center;
 }
+
+/* @media screen and (max-width:768px) {
+    .loginContainer{
+        padding-top: 40%;
+    }
+} */

@@ -1,0 +1,28 @@
+@media screen and (max-width:860px){
+    .signInButton{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width:560px){
+    .signInButton{
+        width: 15%;
+        
+    }
+
+    .signInButton button{
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width:480px){
+    .signInButton{
+        width: 20%;
+        
+    }
+
+    .signInButton button{
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
