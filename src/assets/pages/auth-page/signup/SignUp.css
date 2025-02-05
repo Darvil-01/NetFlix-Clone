@@ -46,6 +46,8 @@
     border-radius: calc(0.1875rem);
     border-color: rgbaa(255,255,255,0.8);
     padding: 10px,0 ;
+    background: transparent;
+    color: #fff;
     
 }
 .signinInput::placeholder{
@@ -64,6 +66,7 @@ button{
         border-radius: 5px;
         font-weight: 500;
         font-size: 1rem;
+        color: #fff;
 }
 .signUpSignInButton{
     margin-top: 10px;
