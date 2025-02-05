@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Auth_NavBar from "../Auth_NavBar/Auth_NavBar"
 import "./SignUp.css"
+import "../../MediaQuery/MQSignUp.css"
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { firebaseAuth } from "../../../../firebase-config";
