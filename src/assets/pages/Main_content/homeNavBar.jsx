@@ -3,22 +3,28 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa6";
 import { FaCaretUp } from "react-icons/fa6";
 import logo from "../../../logo.png"
+import { TfiMenuAlt } from "react-icons/tfi";
 import './homeNavBar.css'
+import '../MediaQuery/MQHomeNavBar.css'
 import { NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { ToastContainer, toast ,Bounce} from 'react-toastify';
 
 import {signOut,getAuth} from 'firebase/auth';
 
-
 export default function HomeNavBar({scrollableDivRef}){
 
     const [homeNavBarClass,setHomeNavBarClass]=useState('NavBarNotScrolled');
     const [toggleArrow,setArrow]=useState(false);
+    const [toggleMenu,setMenu]=useState(false)
     const navigate=useNavigate();
     
     const toggleHandler=()=>{
         setArrow(!toggleArrow)
+    }
+
+    const clickOnMenu=()=>{
+        setMenu(!toggleMenu)
     }
 
     const auth=getAuth();
@@ -86,9 +92,10 @@ export default function HomeNavBar({scrollableDivRef}){
             transition={Bounce}
             />  
             <div className="logoAndLiContainer">
+                <TfiMenuAlt className="menuIcon " onClick={clickOnMenu}/>
                 <img className='homeLogoImg'src={logo}/>
 
-                <div className='menuContainer'>
+                <div className={`menuContainer  ${toggleMenu && `showMenu`}`}>
                     <ul className="menu">
                         <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} to="/main" end>Home</NavLink>
                         {/* <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} to="/main/TVShows">TVShows</NavLink> */}
@@ -98,6 +105,8 @@ export default function HomeNavBar({scrollableDivRef}){
 
                     </ul>
                 </div>
+
+
             </div>
                 
             <div className="searchAndIconsContainer">

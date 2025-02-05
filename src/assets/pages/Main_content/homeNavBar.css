@@ -45,6 +45,14 @@
     /* justify-content: space-around; */
     color: rgba(255,255,255,0.5);
 }
+
+.menuIcon{
+    color: #fff;
+    width: 6%;
+    height: 6%;
+    margin-left: 10px;
+    display: none;
+}
 .navlink{
    
     list-style-type: none;
