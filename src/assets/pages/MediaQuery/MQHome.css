@@ -1,0 +1,65 @@
+@media screen and (max-width:1024px) {
+    .homeButtonContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:690px) {
+    
+    .disp-container{
+        position: absolute;
+        width: 30%;
+        top:20%;
+        left:20px;
+    }
+
+    .disp-text{
+        height: 3%;
+        font-size: 0.8rem;
+        overflow: hidden;
+        
+    }
+
+    .homeButtonContainer button{
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .movieSliderContainer{
+        margin-top: 0%;
+    }
+
+}
+
+@media screen and (max-width:525px){
+    .homeButtonContainer{
+        width: 100%;
+    }
+
+    .disp-text{
+        height: 50px;
+        font-size: 0.7rem;
+        overflow: hidden;
+        
+    }
+    .homeButtonContainer button{
+        font-size: 0.5rem;
+        padding: 3px 5px;
+    }
+    .homeicon{
+        font-size: 0.6rem;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .disp-container{
+        position: absolute;
+        width: 30%;
+        top:10%;
+        left:20px;
+    }
+}
+

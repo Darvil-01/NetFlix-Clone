@@ -11,6 +11,10 @@
    object-fit:fill;
 }
 
+.bgMovieTitle{
+    width:90%;
+    height:40%;
+}
 /* .imgContainer{
     height: 40%;
     width: 100vw;
@@ -20,7 +24,7 @@
 .disp-container{
     position: absolute;
     width: 30%;
-    top:150px;
+    top:25%;
     left:50px;
 }
 
@@ -74,7 +78,7 @@ span{
     overflow-y: visible;
 
     width: 100%;
-    margin-top: -50px;
+    margin-top: -5%;
 
     padding-bottom: 50px;
 }

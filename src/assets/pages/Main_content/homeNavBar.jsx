@@ -97,11 +97,11 @@ export default function HomeNavBar({scrollableDivRef}){
 
                 <div className={`menuContainer  ${toggleMenu && `showMenu`}`}>
                     <ul className="menu">
-                        <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} to="/main" end>Home</NavLink>
+                        <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} onClick={clickOnMenu} to="/main" end>Home</NavLink>
                         {/* <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} to="/main/TVShows">TVShows</NavLink> */}
-                        <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} to="/main/movies">Movies</NavLink>
+                        <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} onClick={clickOnMenu} to="/main/movies">Movies</NavLink>
                         {/* <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} to="/main/News&Popular">News & Popular</NavLink> */}
-                        <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} to="/main/myList">My List</NavLink>
+                        <NavLink className={({isActive})=>(isActive?"navlink active": "navlink")} onClick={clickOnMenu} to="/main/myList">My List</NavLink>
 
                     </ul>
                 </div>

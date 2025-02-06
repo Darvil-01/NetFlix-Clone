@@ -3,6 +3,7 @@ import { MdInfoOutline } from "react-icons/md";
 import bg from'./Hero.jpg'
 import MovieSlider from "./homeComponents/movieSlider";
 import './home.css'
+import '../../MediaQuery/MQHome.css'
 import { useNavigate } from "react-router-dom";
 import useFetch from "../useFetch";
 import { useEffect } from "react";
@@ -13,7 +14,7 @@ export default function Home(){
    const dispatch=useDispatch();
    
    
-   console.log("home render hoaa")
+   console.log("home render hoaa") 
 
     const onPlayClick=()=>{
         dispatch(setPlayerMovieId(1241982));
@@ -29,8 +30,8 @@ export default function Home(){
            
             <div className="disp-container">
                 {/* <h1>House of Ninjas</h1> */}
-                <img style={{width:"90%", height:"40%"}} src="https://image.tmdb.org/t/p/original/sFzVGobXVnazwttzOo34nx0c4vF.png"/>
-                <p>
+                <img className="bgMovieTitle" style={{width:"90%", height:"40%"}} src="https://image.tmdb.org/t/p/original/sFzVGobXVnazwttzOo34nx0c4vF.png"/>
+                <p className="disp-text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quibusdam quaerat culpa assumenda harum obcaecati,
                     
