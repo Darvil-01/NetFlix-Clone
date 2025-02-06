@@ -134,15 +134,14 @@
     top:100%;
     text-align: center;
     display: inline-flex;
-    border-radius: 12px;
+    border-radius: 8px;
     
 }
 
 .logOut>button{
    
     font-size: 0.8rem;
-    height: 100%;
-    width: 100%;
+    
     background-color: red;
     color: #fff;
     border: none;

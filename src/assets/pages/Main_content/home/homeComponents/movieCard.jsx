@@ -4,6 +4,7 @@ import { FaHeart, FaRegHeart, FaRegPlayCircle } from "react-icons/fa";
 import { LuSaveAll } from "react-icons/lu";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import './movieCard.css'
+import '../../../MediaQuery/MQmovieCard.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { postData ,setPlayerMovieId,setplayerFotterVisible} from '../../Movies/movieSlice';
 import { IoMdHeart } from 'react-icons/io';

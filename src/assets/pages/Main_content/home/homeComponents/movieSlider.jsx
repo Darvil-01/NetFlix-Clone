@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useFetch from "../../useFetch";
 import MovieCard from "./movieCard";
 import './movieSlider.css'
+import '../../../MediaQuery/MQMovieSlider.css'
 import { useSelector } from "react-redux";
 export default function MovieSlider({tag}){
    
@@ -33,19 +34,20 @@ export default function MovieSlider({tag}){
     */            
    
     return(
-        <div className="movieSlider">
-            <h2>{tag}</h2>
-           {apiData &&  apiData.length>0 && <div className="movieCards">
-                {
-                    apiData.map((data,index)=>{
-                        return <MovieCard key={index} data={data} play={true} />
-                    })
-                }
-            </div>}
-            
+        <>
+            { apiData &&  apiData.length>0 &&<div className="movieSlider">
+                <h2>{tag}</h2>
+                <div className="movieCards">
+                    {
+                        apiData.map((data,index)=>{
+                            return <MovieCard key={index} data={data} play={true} />
+                        })
+                    }
+                </div>        
+                
+            </div>
+            }
 
-            
-            
-        </div>
+    </>
     );
 }

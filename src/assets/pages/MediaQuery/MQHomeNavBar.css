@@ -51,6 +51,10 @@
         
     }
 
+    .homeIcon{
+        font-size: 0.7rem;
+    }
+
     .searchAndIconsContainer{
         width: 90%;
     }
@@ -71,9 +75,18 @@
 
     .menuIcon{
         
-        width: 35%;
-        height: 35%;
-        
-        
+        width: 30%;
+        height: 30%;    
+    }
+    .homeIcon{
+        font-size: 0.7rem;
+    }
+
+    .logOut>button{
+        font-size: 0.6rem;
+    }
+
+    .logOut{
+        padding: 5px;
     }
 }
