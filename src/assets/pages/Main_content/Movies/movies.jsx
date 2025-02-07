@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../home/homeComponents/movieCard";
 import './movies.css'
+import '../../MediaQuery/MQmovies.css'
 import { GrEbay } from "react-icons/gr";
 import Player from "../../../commonComponents/player";
 import { RxCrossCircled } from "react-icons/rx";

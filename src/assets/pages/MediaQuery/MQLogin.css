@@ -25,7 +25,8 @@
 
 @media screen and (max-width:479px){
     .loginContainer{
-        padding-top: 30%;
+        margin-top: 15%;
+        padding-top: 25%;
     }
 
     .loginInputContainer{
@@ -56,4 +57,11 @@
         font-size: 15px;
     }
    
+}
+
+@media screen and (max-width:479px){
+    .loginContainer{
+        margin-top: 17%;
+        padding-top: 20%;
+    }
 }
