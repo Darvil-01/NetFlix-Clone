@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width:650px) {
-    .dropdown-container{
+    .dropdown-container , .dropdown-notOpen{
         margin-left: 70%;
         margin-top: 12%;
     }
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width:430px) {
-    .dropdown-container{
+    .dropdown-container,.dropdown-notOpen{
         margin-left: 60%;
         margin-top: 15%;
     }
@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width:320px) {
-    .dropdown-container{
+    .dropdown-container,.dropdown-notOpen{
         margin-left: 55%;
         margin-top: 18%;
     }

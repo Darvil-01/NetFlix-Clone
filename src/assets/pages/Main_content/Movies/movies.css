@@ -58,8 +58,22 @@ h1{
     background:transparent;
     height: 200px;
     width: 100px;
-    overflow:hidden;
-    
+    overflow:hidden;    
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .dropdown-notOpen {
+    position: relative;
+    margin-left: 85%;
+    margin-right: 20%;
+    margin-top: 8%;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    background:transparent;
+    height: auto;
+    width: auto;
+    overflow:hidden;    
     padding: 20px;
     z-index: 1000;
   }

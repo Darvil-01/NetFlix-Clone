@@ -29,7 +29,7 @@ function GenreDropdown({ genresList, onGenreSelect }) {
   };
 
   return (
-    <div className="dropdown-container">
+    <div className={isDropdownOpen? "dropdown-container": "dropdown-notOpen"}>
       <button onClick={toggleDropdown} className="dropdown-button">
           { selectedGenre
               ? genresList.find((genre) => genre.id === selectedGenre)?.name

@@ -1,0 +1,91 @@
+@media screen and (max-width:760px) {
+    .myList{
+        gap:15%;
+        padding-top: 25%;
+    }
+    
+    .savedMovieCard{
+        /* position: relative; */
+        flex-direction: column;
+        height: 60%;  
+           
+    }
+    
+    .savedMovieCardImg{
+        /* position: absolute;
+        top:-40% */
+        margin-top: -25%;
+        /* margin-left: 30%; */
+        width: 40%;
+        height: 45%;
+    }
+    .listH2{
+        font-size: 1.3rem;
+    }
+    .listH3{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .movieOverview{
+        font-size: 0.8rem;
+    }
+    .savedListIconContainer{
+        flex-direction: row;
+        height: auto;
+        width: 80%;
+        margin-top: -5%;
+        border-left: none;
+        border-top: 2px solid red;
+        padding-top: 2%;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:590px) {
+    .savedListIcon{
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+        margin-bottom: 3%;
+    }
+    .savedMovieCard{
+        /* position: relative; */
+        flex-direction: column;
+        height: 65%;  
+           
+    }
+}
+
+@media screen and (max-width:480px){
+    .savedMovieCardImg{
+        /* position: absolute;
+        top:-40% */
+        margin-top: -30%;
+        /* margin-left: 30%; */
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+    }
+    .listH2{
+        font-size: 1.1rem;
+        line-height: 5%;
+        width: 20%;
+    }
+    .listH3{
+        font-size: 0.7rem;
+        line-height: 5%;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .savedMovieCardImg{
+        height: 35%;
+    }
+
+}
+

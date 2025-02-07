@@ -1,11 +1,12 @@
 .myList{
-    padding-top:100px;
+    padding-top: 10%;;
     /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: relative;
+    height: 100%;
+    position: relative; 
 
 }
 .savedMovieCard{
@@ -13,12 +14,12 @@
     flex-direction: row;
     gap:20px;
     align-items: center;
-    width: 600px;
-    height: 180px;
+    width: 55%;
+    height: 40%;
     margin-top: 20px;
     margin-bottom: 40px;   
     padding: 20px; 
-    text-align: start;
+
     border-radius: 20px;
     border: 2px solid red;
     line-height: 20px;
@@ -26,21 +27,31 @@
 
 .savedMovieCardImg{
     max-width: 450px;
-    width: 400px;
-    height: 180px;
+    width: 30%;
+    height: 80%;
     object-fit:fill;
-    align-self: flex-start;
+    align-content: flex-start;
+    
     border-radius: 10px;
     /* align-self: flex-end; */
 }
 
 
 
-h2{
+.listH2{
     color: red;
-    line-height: 30px;
+    line-height: 8%;
     /* height: auto; */
     display: inline;
+   
+}
+.movieContainerDiv{
+    display: inline;
+    width: 20%;
+}
+.listH3{
+    display: inline;
+    line-height: 8%;
 }
 
 .movieOverview{
@@ -48,12 +59,13 @@ h2{
         margin-top: -20px;
         height: 95px;
         overflow: hidden;
+        padding-bottom: 1%;
        
 }
 
 p{
     line-height: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 1%;
     
     
 }

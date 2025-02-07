@@ -3,8 +3,9 @@ import { MdOutlinePlayCircle } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
 import { setPlayerMovieId,deleteData } from "../Movies/movieSlice";
 import './myList.css'
+import '../../MediaQuery/MQList.css'
 import { useNavigate } from "react-router-dom";
-import Loder from "../../../commonComponents/loder";
+import Loder from "../../../commonComponents/loder"; 
 
 export default function myList(){
 
@@ -36,7 +37,7 @@ export default function myList(){
                         <img src={`https://image.tmdb.org/t/p/original`+fetchedMovie.poster_path}  className="savedMovieCardImg"/>
 
                         <div>
-                            <h2>{fetchedMovie.title}</h2> &nbsp;({movie.genreName})
+                            <h2 className="listH2"><div className="movieContainerDiv">{fetchedMovie.title}</div></h2> &nbsp; <h3 className="listH3">({movie.genreName})</h3>
                             
                             <p>overview:</p>
                             <p className="movieOverview">{fetchedMovie.overview}</p>
