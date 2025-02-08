@@ -171,18 +171,19 @@ export default function Movies(){
            filterList.length==0 ? ( genresList.map(({id,name})=>{
             return ( name!=="Romance" && <div className="movieHolder" >
                     <h1> {name} </h1>
-                    <div className=" movieList"  >{
-                       movieList[id] && movieList[id].map((data)=>(
-                          // console.log(data),
-                          <MovieCard key={data.id}
-                              data={data} play={false}
-                              setprm={(id)=>cardOnClickHandler(id)} 
-                              genre_Id={id}
-                               genre_name={ name}
-                           />
-                       )) 
-                    }
-                    </div> 
+                    {   movieList[id] && <div className=" movieList"  >{
+                            movieList[id].map((data)=>(
+                              // console.log(data),
+                              <MovieCard key={data.id}
+                                  data={data} play={false}
+                                  setprm={(id)=>cardOnClickHandler(id)} 
+                                  genre_Id={id}
+                                  genre_name={ name}
+                              />
+                          )) 
+                        }
+                        </div>
+                     }
                   </div>)
 
             })):( filterList[0].name!=="Romance" && <div className="movieHolder" >
