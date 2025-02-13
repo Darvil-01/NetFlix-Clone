@@ -16,7 +16,7 @@ import { useEffect, useState } from 'react';
         },3000);
 
         
-        setTimeout(()=>setFadeUp(true),5960);
+        setTimeout(()=>setFadeUp(true),5600);
     },[])
 
     
